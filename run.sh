@@ -18,6 +18,8 @@ fi
 
 set -e
 
-go build "$FILE"
+echo "] Building"
+time go build "$FILE"
 
+echo "./main"
 ./main
